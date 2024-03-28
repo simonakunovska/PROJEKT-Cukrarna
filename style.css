@@ -34,10 +34,10 @@ body {
 	font-family: "Lora", serif;
 	font-size:18px;
 	line-height: 1.5;
-	max-width:1100px; /* sem nebo přímo sekcím? */
-	margin:0 auto;
 	color:#242424;
 }
+
+
 
 
 
@@ -46,7 +46,8 @@ h1{
 	font-family: "Playfair Display", serif;
 	line-height: 1.25;
 	font-weight: bold;
-	color:white;
+	color:#ffffff;
+	margin:0;
 }
 
 
@@ -56,6 +57,7 @@ h2{
 	line-height: 1.25;
 	font-weight: bold;
 	color:#3e606b;
+	margin:0;
 }
 
 h3{
@@ -64,6 +66,7 @@ h3{
 	line-height: 1.25;
 	font-weight: bold;
 	color:#3e606b;
+	text-align:center;
 
 }
 
@@ -71,13 +74,22 @@ h3{
 /* horní menu */
 
 .hlavicka{
-	display:flex;
+
 	padding: 30px 0;
-	justify-content:space-between;
-	align-items:center;
+	
 	
 	
 }
+
+.menuu{
+	display:flex;
+	max-width:1100px;
+	margin: 0 auto;
+	align-items:center;
+	justify-content:space-between;
+}
+
+
 
 .menu {
 	
@@ -114,14 +126,22 @@ section{
 /* hero */
 
 .hero{
-	padding-right:40%;
+	/*padding-right:40%;*/
 	background-image: url('images/cupcake.jpg'); 
-	background-size:cover; /* neroztáhl se ,proč? */
+	background-size:cover; 
 	background-position:center;
 	color:white;
 	
 }
 
+.heroo{
+	display:flex;
+	max-width:1100px;
+	margin: 0 auto;
+	align-items:center;
+	flex-wrap:wrap;
+
+}
 
 .hero p{
 	font-style: italic;
@@ -130,11 +150,16 @@ section{
 
 /* vitejte */
 
-.vitejte{
+
+
+.vitejtee{
 	display:flex;
-	
-	
+	max-width:1100px;
+	margin: 0 auto;
+	align-items:center;
 }
+
+
 
 .levy {
 	justify-content:flex-start;
@@ -163,12 +188,23 @@ section{
 /* nabidka */
 
 .nabidka{
-	display:flex;
+	
 	background-color:#f0f0f0;	
 	flex-wrap:wrap;
 	justify-content:center;
 	
 }
+
+.nabidkaa{
+	display:flex;
+	max-width:1100px;
+	margin: 0 auto;
+	flex-wrap:wrap;
+}
+
+
+
+
 
 .textnabidka{
 	flex-basis:100%;
@@ -179,19 +215,63 @@ section{
 	border-radius:5px;
 	background-color:white;
 	margin-right:30px;
-	flex: 0 1 25%; /* jak je dostanu uplně vedle sebe? */
-	flex-wrap:nowrap; /* jak je dostanu uplně vedle sebe? */
+	flex: 0 1 calc((1100px - 120px) / 4); 
+	
 	
 
 }
 
-	/* pristup */
+.prvni img {
+	width:100%;
+}
 
-.pristup{
-	display:flex;
+.druhy img {
+	width:100%;
+}
+
+.treti img {
+	width:100%;
+}
+
+.ctvrty img {
+	width:100%;
+}
+
+.prvni p {
+	padding:20px;
+	text-align:center;
+	margin:0;
+}
+
+.druhy p {
+	padding:20px;
+	text-align:center;
+	margin:0;
+}
+
+.treti p {
+	padding:20px;
+	text-align:center;
+	margin:0;
+}
+
+.ctvrty p {
+	padding:20px;
+	text-align:center;
+	margin:0;
 }
 
 
+	/* pristup */
+
+
+
+.pristupp{
+	display:flex;
+	max-width:1100px;
+	margin: 0 auto;
+	align-items:center;
+}
 
 .levypeceni {
 	justify-content:flex-start;
@@ -216,4 +296,3 @@ section{
 }
 
 
-/* dodělat mezery mezi sekcemi, tlaítko margin a obrázky vedle sebe a banner přes cele */
